@@ -2,20 +2,15 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     background-color: #5988FF;
-    color: #FFFFFF;            
+    animation: color-change 5s infinite;
+    color: #FFFFFF;
     margin: 20px;
     padding: 20px;
 }
-
-h1 {
-    color: #D6FF6B;            
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #FD98FB;            
-    font-size: 26px;
+@keyframes color-change {
+    0% { color: #D6FF6B; }
+    50% { color: #FD98FB; }
+    100% { color: #D6FF6B; }
 }
 
 h3 { color: #D6FF6B; font-size: 22px; }
@@ -38,10 +33,17 @@ li {
     margin-bottom: 5px;
 }
 
-img {
-    width: 1500px;
+img.flip-horizontal-bottom {
+    width: 1000px;
     height: 500px;
     display: block;
     margin-top: 20px;
     border-radius: 8px;
+}
+
+iframe {
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 1000px;
+    height: 500px;
 }
